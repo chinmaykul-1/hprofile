@@ -13,18 +13,12 @@ jobs:
       - name: mvn checkstyle
         run: mvn checkstyle:checkstyle
 
-  SetupJava:
-    runs-on: ubuntu:latest
-    steps:
       - name: setup java
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 11
   
-  SetupSonarScanner:
-    runs-on: ubuntu:latest
-    steps:
        # Setup sonar-scanner
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v8
