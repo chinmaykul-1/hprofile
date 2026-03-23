@@ -5,7 +5,7 @@ env:
   ECR_REPOSITORY: gh-actions
   ECS_SERVICE: hprofile-app-service-co32ewja
   ECS_CLUSTER: hprofile
-  ECS_TASK_DEFINITION: hprofile-app
+  ECS_TASK_DEFINITION: aws-files/taskdeffile.json
   CONTAINER_NAME: hprofile-app-container
 jobs:
   Checkoutandtest:
